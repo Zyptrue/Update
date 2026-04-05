@@ -1,0 +1,14 @@
+local UserInputService = game:GetService("UserInputService")
+
+local isMobile = UserInputService.TouchEnabled and not UserInputService.MouseEnabled
+local isPC = UserInputService.MouseEnabled and not UserInputService.TouchEnabled
+
+if isMobile then
+    print("[Attached Scripts, Check pastebin.com/u/zyptrue]")
+    wait(1)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Zyptrue/Latest/refs/heads/main/Update"))()
+elseif isPC then
+    print("[Attached Scripts, Check pastebin.com/u/zyptrue]")
+    wait(1)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Zyptrue/Main-Scripts/refs/heads/main/Main%20Scripts%20%5BV1%5D"))()
+end
